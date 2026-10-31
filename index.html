@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>빅데이터 분석 과제 갤러리</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f6ff;
+            color: #24334d;
+            line-height: 1.7;
+        }
+
+        /* 상단 소개 */
+        header {
+            background: linear-gradient(135deg, #1e40af, #3b82f6, #60a5fa);
+            color: white;
+            text-align: center;
+            padding: 85px 20px;
+        }
+
+        header h1 {
+            font-size: 34px;
+            margin-bottom: 18px;
+        }
+
+        header p {
+            font-size: 16px;
+            opacity: 0.95;
+        }
+
+        /* 메인 영역 */
+        main {
+            max-width: 1050px;
+            margin: 65px auto;
+            padding: 0 25px;
+        }
+
+        .section-title {
+            font-size: 25px;
+            color: #1e40af;
+            margin-bottom: 30px;
+        }
+
+        /* 카드 배치 */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 28px;
+        }
+
+        /* 작품 카드 */
+        .card {
+            display: block;
+            background: white;
+            padding: 32px;
+            border-radius: 18px;
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid #dbeafe;
+            box-shadow: 0 5px 20px rgba(37, 99, 235, 0.08);
+            transition: 0.25s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 28px rgba(37, 99, 235, 0.16);
+        }
+
+        .number {
+            display: inline-block;
+            background: #dbeafe;
+            color: #2563eb;
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            color: #1e3a8a;
+            font-size: 21px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #64748b;
+            font-size: 15px;
+        }
+
+        .open {
+            display: inline-block;
+            margin-top: 25px;
+            color: #2563eb;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* 하단 */
+        footer {
+            text-align: center;
+            padding: 35px 15px;
+            margin-top: 70px;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        /* 모바일 반응형 */
+        @media (max-width: 650px) {
+            header {
+                padding: 60px 20px;
+            }
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            header p {
+                font-size: 14px;
+            }
+
+            main {
+                margin: 40px auto;
+                padding: 0 18px;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .card {
+                padding: 25px;
+            }
+
+            .card h3 {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 제목 및 소개 -->
+    <header>
+        <h1>&lt;빅데이터 분석&gt; 과제 갤러리</h1>
+
+        <p>
+            데이터로 세상을 읽고, 분석으로 새로운 인사이트를 발견하는
+            빅데이터 분석 과제 갤러리입니다.
+        </p>
+    </header>
+
+    <!-- 작품 목록 -->
+    <main>
+
+        <h2 class="section-title">📊 나의 분석 작품</h2>
+
+        <div class="gallery">
+
+            <!-- 작품 1 -->
+            <a href="pdf/electric-vehicle-air-pollution-regression.pdf"
+               target="_blank"
+               class="card">
+
+                <span class="number">PROJECT 01</span>
+
+                <h3>전기차 보급률과 초미세먼지(PM2.5)의 관계 분석</h3>
+
+                <p>
+                    전기차 보급률과 초미세먼지 농도 사이의 관계를
+                    선형회귀분석을 통해 탐구한 프로젝트입니다.
+                </p>
+
+                <span class="open">PDF 작품 보러 가기 →</span>
+
+            </a>
+
+
+            <!-- 작품 2 -->
+            <a href="pdf/pokemon-statistical-analysis.pdf"
+               target="_blank"
+               class="card">
+
+                <span class="number">PROJECT 02</span>
+
+                <h3>포켓몬 데이터 분석 – 타입별 스탯과 전설 포켓몬의 특징</h3>
+
+                <p>
+                    포켓몬의 다양한 능력치 데이터를 분석하여
+                    타입별 특징과 전설 포켓몬의 차이를 탐구한 프로젝트입니다.
+                </p>
+
+                <span class="open">PDF 작품 보러 가기 →</span>
+
+            </a>
+
+
+            <!-- 작품 3 -->
+            <a href="pdf/renewable-energy-production-racing-chart.pdf"
+               target="_blank"
+               class="card">
+
+                <span class="number">PROJECT 03</span>
+
+                <h3>국가별 재생에너지 생산량 변화 분석</h3>
+
+                <p>
+                    2000년부터 2023년까지 5개 국가의 재생에너지 생산량을
+                    비교하고, Bar Chart Race를 활용해 국가별 성장과
+                    에너지 전환의 차이를 시각화한 프로젝트입니다.
+                </p>
+
+                <span class="open">PDF 작품 보러 가기 →</span>
+
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- 하단 저작권 -->
+    <footer>
+        © 2026 Big Data Analysis Project Gallery
+    </footer>
+
+</body>
+</html>
